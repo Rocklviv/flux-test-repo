@@ -10,11 +10,11 @@ metadata:
 spec:
   releaseName: ghost
   chart:
-    git: git@github.com:Rocklviv/flux-test-repo
+    git: git@github.com:Rocklviv/flux-test-repo.git
     path: charts/ghost
     ref: dev
   values:
-    image: rocklviv/ghost:dev-3
+    image: rocklviv/ghost:dev-4
     replicaCount: 1
     hpa:
       enabled: false
