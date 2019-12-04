@@ -14,7 +14,7 @@ spec:
     path: charts/ghost
     ref: master
   values:
-    image: bitnami/ghost:3.0.2-debian-9-r2
+    image: rocklviv/ghost
     replicaCount: 1
     hpa:
       enabled: false
