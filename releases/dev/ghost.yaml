@@ -2,13 +2,13 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: ghost
+  name: ghost-dev
   namespace: dev
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.chart-image: glob:dev-*
 spec:
-  releaseName: ghost
+  releaseName: ghost-dev
   chart:
     git: git@github.com:Rocklviv/flux-test-repo.git
     path: charts/ghost
