@@ -14,7 +14,7 @@ spec:
     path: charts/ghost
     ref: dev
   values:
-    image: rocklviv/ghost:dev-2
+    image: rocklviv/ghost:dev-3
     replicaCount: 1
     hpa:
       enabled: false
