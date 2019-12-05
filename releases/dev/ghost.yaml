@@ -13,8 +13,8 @@ spec:
     git: git@github.com:Rocklviv/flux-test-repo.git
     path: charts/ghost
     ref: dev
-    version: ghost-8.0.5
-    appVersion: ghost-8.0.5
+  version: ghost-8.0.5
+  appVersion: ghost-8.0.5
   values:
     image: rocklviv/ghost:dev-3
     replicaCount: 1
