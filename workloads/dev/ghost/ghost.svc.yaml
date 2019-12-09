@@ -9,6 +9,6 @@ spec:
     app: ghost
   type: ClusterIP
   ports:
-    - name: "ghost port"
+    - name: "ghost"
       port: 80
       targetPort: 2368
