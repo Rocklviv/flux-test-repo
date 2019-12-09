@@ -1,0 +1,13 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ghost
+spec:
+  selector:
+    app: ghost
+  type: ClusterIP
+  ports:
+    - name: ghost port
+      port: 80
+      targetPort: 2368
