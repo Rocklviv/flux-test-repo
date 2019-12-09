@@ -3,11 +3,12 @@ kind: Service
 apiVersion: v1
 metadata:
   name: ghost
+  namespace: dev
 spec:
   selector:
     app: ghost
   type: ClusterIP
   ports:
-    - name: ghost port
+    - name: "ghost port"
       port: 80
       targetPort: 2368
