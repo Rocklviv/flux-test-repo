@@ -22,13 +22,13 @@ spec:
         app: ghost
     spec:
       containers:
-        - name: ghost
-          image: ghost:2-alpine
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 2368
-              name: http
-              protocol: TCP
-          env:
-            - name: "URL"
-              value: "http://0.0.0.0:2368"
+      - name: ghost
+        image: ghost:3-alpine
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 2368
+          name: http
+          protocol: TCP
+        env:
+        - name: "URL"
+          value: "http://0.0.0.0:2368"
