@@ -6,6 +6,8 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/cors-allow-origin: "http://ghost.local"
     nginx.ingress.kubernetes.io/affinity: "cookies"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, PUT, POST, DELETE, PATCH, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-headers: "X-Forwarded-For"
 spec:
   rules:
     - host: ghost.local
