@@ -5,6 +5,7 @@ metadata:
   namespace: dev
   annotations:
     nginx.ingress.kubernetes.io/cors-allow-origin: "http://ghost.local"
+    nginx.ingress.kubernetes.io/affinity: "cookies"
 spec:
   rules:
     - host: ghost.local
