@@ -33,9 +33,3 @@ spec:
           env:
             - name: "URL"
               value: "http://0.0.0.0:2368"
-            - name: "GHOST_USERNAME"
-              value: "Rocklviv"
-            - name: "GHOST_PASSWORD"
-              value: "Rocklviv85"
-            - name: "BLOG_TITLE"
-              value: "DevOps Notes"
