@@ -11,7 +11,7 @@ metadata:
     flux.weave.works/automated: "true"
     flux.weave.works/locked: "true"
     # do not apply this manifest on the cluster
-    flux.weave.works/ignore: "true"
+    flux.weave.works/ignore: "false"
 spec:
   replicas: 1
   selector:
@@ -33,3 +33,9 @@ spec:
           env:
             - name: "URL"
               value: "http://0.0.0.0:2368"
+            - name: "GHOST_USERNAME"
+              value: "Rocklviv"
+            - name: "GHOST_PASSWORD"
+              value: "Rocklviv85"
+            - name: "BLOG_TITLE"
+              value: "DevOps Notes"
